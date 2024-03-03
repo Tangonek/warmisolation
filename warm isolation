@@ -1,0 +1,16 @@
+while true do
+wait(0.1)
+local args = {
+    [1] = true}
+
+game:GetService("ReplicatedStorage").Remotes.Shop.SubmitVote:FireServer(unpack(args))
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "BEAR ";
+	Text = "BY TANGO";
+	Icon = "rbxthumb://type=Asset&id=16607866349&w=150&h=150"})
+Duration = 5;
+
+Frame.Active = true -- main = gui
+Frame.Draggable = true
+
